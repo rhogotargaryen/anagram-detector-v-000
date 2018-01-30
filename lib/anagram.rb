@@ -14,7 +14,7 @@ class Anagram
     v = @name.scan /\w/
     w_array.each do |x|
       r = x.scan /\w/
-      t << v
+      t << r
     end
     t.each do |x|
       if x.sort == v.sort
