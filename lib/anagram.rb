@@ -5,7 +5,7 @@ class Anagram
   end
   def match(w_array)
     w_array.each do |x|
-      if x.scan(/\w+/) == @name.scan(/\w+/)
+      if x = @name/\w+/)
         x
       end
     end
