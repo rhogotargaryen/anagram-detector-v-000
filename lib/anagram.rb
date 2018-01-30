@@ -16,11 +16,10 @@ class Anagram
       end
       t.each do |x|
         if x.sort == v.sort
-          return x.join
-        else
-          t
+          t << x.join
         end
       end
     end
+    t
   end
 end
