@@ -9,9 +9,9 @@ class Anagram
   end
   def match?(w_array)
     if w_array.include?(@name)
-      return []
+      return @name
     else
-      w_array
+      []
     end
   end
   def parse(w_array)
