@@ -5,7 +5,5 @@ class Anagram
   end
   def match(w_array)
     w_array.include?(@name)
-      end
-    end
   end
 end
