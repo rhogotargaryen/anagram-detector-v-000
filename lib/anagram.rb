@@ -19,6 +19,8 @@ class Anagram
     t.each do |x|
       if x.sort == v.sort
         return x.join
+      else
+        x
       end
     end
   end
