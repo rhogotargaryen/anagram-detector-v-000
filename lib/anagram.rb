@@ -4,6 +4,6 @@ class Anagram
     name = @name
   end
   def match(w_array)
-    if w_array.include?(@name) ? @name : []
+    w_array.include?(@name) ? @name : []
   end
 end
