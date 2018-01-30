@@ -5,7 +5,7 @@ class Anagram
   end
   def match(w_array)
     if w_array.include?(@name)
-      return []
+      return @name
     else
       w_array.select! { |x| x.length == @name.length }
       w_array
