@@ -4,7 +4,7 @@ class Anagram
     name = @name
   end
   def match(w_array)
-    w_array.include?(@array)
+    w_array.include?(@name)
       end
     end
   end
