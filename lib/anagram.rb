@@ -9,7 +9,7 @@ class Anagram
   end
   def match?(w_array)
     if w_array.include?(@name)
-      return @name
+      return []
     else
       w_array
     end
