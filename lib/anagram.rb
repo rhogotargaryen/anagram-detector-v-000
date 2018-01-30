@@ -2,6 +2,7 @@ class Anagram
   attr_accessor :name
   def initialize
     name = @name
+  end
   def match(w_array)
     w_array.each do |x|
       if x.scan(/\w+/) == @name.scan(/\w+/)
