@@ -20,7 +20,7 @@ class Anagram
       if x.sort == v.sort
         return x.join
       else
-        x
+        t
       end
     end
   end
