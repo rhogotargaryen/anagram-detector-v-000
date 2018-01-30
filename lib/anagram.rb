@@ -5,7 +5,6 @@ class Anagram
       if x.scan(/\w+/) { |match|  } == word.scan(/\w+/)
         x
       end
-    end        
-        
+    end
   end
 end
