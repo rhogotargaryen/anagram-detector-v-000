@@ -4,21 +4,12 @@ class Anagram
     @name = name
   end
   def match(w_array)
-    self.match?(w_array)
-    self.ana(w_array)
-  end
-  def match?(w_array)
     if w_array.include?(@name)
-      return @name
+      return []
     else
-      return w_array = []
+      w_array.select! { |x| x.length == @name.length }
+      w_array
     end
-  end
-  def parse(w_array)
-    w_array.select! { |x| x.length == @name.length }
-    w_array
-  end
-  def ana(w_array)
     t = []
     v = @name.scan /\w/
     w_array.each do |x|
