@@ -11,7 +11,7 @@ class Anagram
     if w_array.include?(@name)
       return @name
     else
-      w_array = []
+      return w_array = []
     end
   end
   def parse(w_array)
