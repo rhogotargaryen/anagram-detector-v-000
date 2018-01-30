@@ -6,7 +6,7 @@ class Anagram
   def match(w_array)
     w_array.each do |x|
       if x = @name
-        x
+        return x
       end
     end
   end
