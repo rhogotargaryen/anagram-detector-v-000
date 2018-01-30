@@ -1,16 +1,12 @@
 class Anagram
   attr_accessor :name
   def initialize(name)
-    name = @name
+    @name = name
   end
   def match(w_array)
-    w_array.include?(@name) ? @name : []
+    self.match?(w_array)
   end
-  def detector(w_array)
-    w_array.each do |x|
-      if x.scan(/\w+/) == @name.scan(/\w+/)
-        x
-      end
-    end
+  def match?(w_array)
+    w_array.include?(@name) ? @name : []
   end
 end
