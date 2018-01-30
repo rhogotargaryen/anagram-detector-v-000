@@ -9,6 +9,7 @@ class Anagram
     else
       w_array.select! { |x| x.length == @name.length }
       t = []
+      a= []
       v = @name.scan /\w/
       w_array.each do |x|
         r = x.scan /\w/
@@ -16,10 +17,10 @@ class Anagram
       end
       t.each do |x|
         if x.sort == v.sort
-          t << x.join
+          a << x.join
         end
       end
     end
-    t
+    a
   end
 end
